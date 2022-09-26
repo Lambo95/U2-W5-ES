@@ -15,36 +15,8 @@ let timerID = setInterval(updateTime, 1000);
 
 updateTime();
 
-let today = new Date();
-var days;
-switch (today.getDay()) {
-  case 0:
-    days = "domenica";
-    break;
-  case 1:
-    days = "lunedì";
-    break;
-  case 2:
-    days = "martedì";
-    break;
-  case 3:
-    days = "mercoledì";
-    break;
-  case 4:
-    days = "giovedì";
-    break;
-  case 5:
-    days = "venerdì";
-    break;
-  case 6:
-    days = "sabato";
-    break;
-}
-
 let printData = function () {
-  let dateIT = today.toLocaleDateString("it-IT");
-  console.log(dateIT);
-  let data = today.getDay(dateIT);
-
+  let data = today.toLocaleDateString("it-IT", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+  console.log(data);
   document.getElementById("data").innerText = data;
 };
