@@ -1,0 +1,47 @@
+#img-resp-first {
+  max-width: 80%;
+  height: 30vh;
+  margin: 0 auto;
+  background: url(./img/index.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#img-resp-second {
+  max-width: 50%;
+  height: 30vh;
+  margin: 0 auto;
+  background: url(./img/index2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#time {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+#data {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: white;
+  width: 80%;
+}
+
+.center {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  /* .container-flex {
+    display: flex;
+  } */
+
+  /* #img-resp-second {
+  } */
+}
